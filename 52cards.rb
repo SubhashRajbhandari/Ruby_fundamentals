@@ -1,9 +1,8 @@
 
 class Deck
     def initialize
-        # attr_accessor :cards
         @cards =[]
-        rank = ["A",'2','3','4','5','6','7','8','9','10','J','Q','K']
+        rank = ["Ace",'2','3','4','5','6','7','8','9','10','Jack','Queen','King']
         suit = ['Diamond','Heart','Spades','Club']
         i=0
         while (i<13) do 
