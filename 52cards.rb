@@ -1,15 +1,20 @@
-
+class Cards
+    def initialize(rank, suit)
+        @rank=rank
+        @suit=suit
+    end
+end
 class Deck
     def initialize
         @cards =[]
-        rank = ["Ace",'2','3','4','5','6','7','8','9','10','Jack','Queen','King']
+        rank = ["A",'2','3','4','5','6','7','8','9','10','J','Q','K']
         suit = ['Diamond','Heart','Spades','Club']
         i=0
         while (i<13) do 
             j=0
             while (j<4) do 
                 @cards.push("#{rank[i]} of #{suit[j]}")
-                # puts ("#{rank[i]} of #{suit[j]}")
+                Cards.new(rank[i], suit[j])
                 j += 1
             end
             i+=1
